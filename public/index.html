@@ -7,8 +7,88 @@
     <title>Звуки природы</title>
 </head>
 <body>
-    <h1>
-        Привет
-    </h1>
+    <div class="container">
+        <h1>Weather Sounds</h1>
+        <div class="sounds">
+            <div class="card">
+                <button class="btn" data="forest">
+                    <img
+                        class="icon"
+                        src="./assets/icons/forest-icon.svg" 
+                        alt=""
+                    >
+                </button>
+                <input
+                    class="volume"
+                    type="range" 
+                    id="volumeSlider-forest" 
+                    min="0" 
+                    max="1" 
+                    step="0.01" 
+                    value="0.5"
+                >
+
+                <audio
+                    class="audio"
+                    id="audio-forest" 
+                    loop
+                >
+                    <source src="./assets/audio/forest.mp3" type="audio/mpeg" />
+                </audio>
+            </div>
+            <div class="card">
+                <button class="btn" data="rain">
+                    <img
+                        class="icon"
+                        src="./assets/icons/rain-icon.svg" 
+                        alt=""
+                    >
+                </button>
+
+                <input 
+                    class="volume"
+                    type="range" 
+                    id="volumeSlider-rain" 
+                    min="0" 
+                    max="1" 
+                    step="0.01" 
+                    value="0.5"
+                >
+                <audio
+                    class="audio"
+                    id="audio-rain" 
+                    loop
+                >
+                    <source src="./assets/audio/rain.mp3" type="audio/mpeg" />
+                </audio>
+            </div>
+            <div class="card">
+                <button class="btn" data="snow">
+                    <img
+                        class="icon"
+                        src="./assets/icons/snow-icon.svg" 
+                        alt=""
+                    >
+                </button>
+
+                <input
+                    class="volume"
+                    type="range" 
+                    id="volumeSlider-snow" 
+                    min="0" 
+                    max="1" 
+                    step="0.01" 
+                    value="0.5"
+                >
+
+                <audio
+                    class="audio"
+                    id="audio-snow" 
+                >
+                    <source src="./assets/audio/snow.mp3" type="audio/mpeg" />
+                </audio>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
